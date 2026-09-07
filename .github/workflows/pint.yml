@@ -21,5 +21,3 @@ jobs:
             pintVersion: 1.8.0
             onlyDirty: true
             onlyDiff: "main"
-        - name: Create Pull Request
-          uses: peter-evans/create-pull-request@v8
