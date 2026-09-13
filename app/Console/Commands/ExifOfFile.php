@@ -6,17 +6,14 @@ use App\Services\ExifService;
 use Illuminate\Console\Attributes\Description;
 use Illuminate\Console\Attributes\Signature;
 use Illuminate\Console\Command;
-use Illuminate\Support\Facades\File;
 
 #[Signature('app:exif')]
-#[Description('Lista os meta dados dos arquivos')]
+#[Description('Lista os meta dados dos Arquivos')]
 class GetExifOfFile extends Command
 {
     public function __construct(
-        private $service = new ExifService,
-    ) {
-        return parent::__construct();
-    }
+        protected $service = new ExifService,
+    ) {}
 
     /**
      * Execute the console command.
