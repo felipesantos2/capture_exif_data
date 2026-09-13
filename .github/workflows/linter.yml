@@ -8,20 +8,29 @@ on:
       - "develop"
 
 jobs:
-  phplint:
+  lint:
     runs-on: ubuntu-latest
     steps:
-        - uses: actions/checkout@v6
-          with:
-            fetch-deps: 0
+      - name: Get Latest Code
+      - uses: actions/checkout@v6
 
-        - name: Laravel Pint
-          uses: aglipanci/laravel-pint-action@2.6
-          with:
-            preset: laravel
-            verboseMode: false
-            testMode: true
-            configPath: "pint.json"
-            pintVersion: 1.32.0
-            onlyDirty: true
-            onlyDiff: "main"
+      - name: Run Build Command Before Deploy
+        run: |
+          npm i
+          npm run build
+
+      - name: Laravel Pint
+        uses: aglipanci/laravel-pint-action@2.6
+        with:
+          preset: laravel
+          verboseMode: false
+          testMode: true
+          configPath: "pint.json"
+          pintVersion: 1.32.0
+          onlyDirty: true
+          onlyDiff: "main"
+
+      - name: List Files in Repo
+        run: "ls ${{ github.workspace }}"
+
+      - run: echo "🍏 This job's status is ${{ job.status }}."
