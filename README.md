@@ -20,3 +20,10 @@ Aqui temos um lab construido por volta do ecossistema PHP e Laravel. Vamos anali
     "livewire/livewire": "^4.4",
     "robsontenorio/mary": "^2.9"
 ``` 
+
+--
+
+Inicialmente temos um commando artisan e uma service para trabalhar com essa caputura inicial.
+
+- `ExifOfFile.php`
+- `ExifService.php`
