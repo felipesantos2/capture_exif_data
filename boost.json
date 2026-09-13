@@ -2,8 +2,9 @@
     "agents": [
         "codex",
         "copilot",
-        "grok_build",
-        "opencode"
+        "opencode",
+        "antigravity",
+        "zed"
     ],
     "cloud": false,
     "guidelines": true,
@@ -14,6 +15,7 @@
         "infer-conventions",
         "laravel-best-practices",
         "testing-best-practices",
+        "livewire-development",
         "tailwindcss-development"
     ]
 }
