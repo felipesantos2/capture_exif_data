@@ -11,7 +11,6 @@ jobs:
   phplint:
     runs-on: ubuntu-latest
     steps:
-        - name: Get Code
         - uses: actions/checkout@v6
           with:
             fetch-deps: 0
