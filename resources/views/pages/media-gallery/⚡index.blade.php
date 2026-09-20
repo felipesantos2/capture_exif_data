@@ -22,7 +22,7 @@ new class extends Component
 
     public function mount(): void
     {
-        $this->library = new Collection();
+        $this->library = new Collection;
     }
 
     public function save(): void
