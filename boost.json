@@ -2,9 +2,7 @@
     "agents": [
         "codex",
         "copilot",
-        "opencode",
-        "antigravity",
-        "zed"
+        "opencode"
     ],
     "cloud": false,
     "guidelines": true,
