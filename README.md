@@ -3,7 +3,7 @@
 
 ## Exchangeable image file format (EXIF)
 
-Aqui temos um lab construido por volta do ecossistema PHP e Laravel. Vamos analisar e visualizar meta-informações de arquivos, iniciamente arquivos de imagem.
+Aqui temos um lab construído por volta do ecossistema PHP e Laravel, onde vamos analisar e visualizar meta-informações de arquivos de imagem
 
 `Na primeira rodada vamos explorar essas duas extenções:`
 
@@ -23,7 +23,7 @@ Aqui temos um lab construido por volta do ecossistema PHP e Laravel. Vamos anali
 
 --
 
-Inicialmente temos um commando artisan e uma service para trabalhar com essa caputura inicial.
+Inicialmente, temos um comando artisan e uma service para trabalhar com essa captura inicial.
 
 - `ExifOfFile.php`
 - `ExifService.php`
