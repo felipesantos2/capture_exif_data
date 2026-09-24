@@ -63,5 +63,7 @@ Vamos trocar uma ideia no LinkedIn:
 #### *ACESSO RÁPIDO DAS PRINCIPAIS DOCS*
 
 [https://livewire.laravel.com](https://livewire.laravel.com)
+
 [https://laravel.com](https://laravel.com)
+
 [https://mary-ui.com/](https://mary-ui.com)
